@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CollegeTips Photo Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>CollegeTips Photo Gallery</h1>
+    <p>Explore the best moments with us!</p>
+  </header>
+
+  <div class="filter-buttons">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('program')">CollegeTips Program</button>
+    <button onclick="filterImages('members')">CollegeTips Members</button>
+    <button onclick="filterImages('internships')">CollegeTips Internships</button>
+    <button onclick="filterImages('bloopers')">Bloopers</button>
+  </div>
+
+  <div class="gallery">
+    <img src="/header-image-1.webp" alt="Program" class="gallery-item program">
+    <img src="/header-image-2.webp" alt="Members" class="gallery-item members">
+    <img src="/header-image-3.webp" alt="Internships" class="gallery-item internships">
+    <img src="/Untitled.png" alt="Bloopers" class="gallery-item bloopers">
+  </div>
+
+  <footer>
+    <p>Made with ❤️ by CollegeTips Interns</p>
+  </footer>
+
+  <!-- Lightbox for fullscreen image view -->
+  <div id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="Full View">
+  </div>
+
+  <!-- Scroll to Top Button -->
+  <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">⬆️</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
