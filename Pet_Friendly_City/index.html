@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet-Friendly City Campaign</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Welcome to the Pet-Friendly City!</h1>
+    <p>Join the movement to make our city a safe and loving place for pets.</p>
+    <div class="buttons">
+      <button onclick="window.location.href='#'">Join the Movement</button>
+      <button onclick="window.location.href='#volunteer'">Volunteer Now</button>
+      <button onclick="window.location.href='#learn-more'">Learn More</button>
+    </div>
+  </header>
+
+  <!-- Volunteer Form Section -->
+  <section id="volunteer" class="section">
+    <h2>Become a Volunteer</h2>
+    <form>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="text" name="city" placeholder="Your City" required>
+      <select name="role" required>
+        <option value="" disabled selected>Select Your Role</option>
+        <option value="rescuer">Rescuer</option>
+        <option value="trainer">Trainer</option>
+        <option value="donor">Donor</option>
+      </select>
+      <button type="submit">Sign Up</button>
+    </form>
+  </section>
+
+  <!-- Impact Stories Section -->
+  <section id="impact-stories" class="section">
+    <h2>Impact Stories</h2>
+    <div class="stories">
+      <article>
+        <h3>Making a Difference</h3>
+        <p>In 2023, over 200 stray dogs were rescued and found homes, thanks to our volunteers!</p>
+      </article>
+      <article>
+        <h3>Success Story</h3>
+        <p>Meet Bella, a rescued pup, now thriving in her forever home.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Pet Adoption Section -->
+  <section id="pet-adoption" class="section">
+    <h2>Adopt a Pet Today!</h2>
+    <div class="carousel-wrapper">
+      <div class="carousel">
+        <div class="pet-profile active">
+          <img src="/photos/cat.jpg" alt="Pet 1">
+          <h3>Fluffy</h3>
+          <p>Age: 1.5 years | Breed: Persian | Location: New York</p>
+        </div>
+        <div class="pet-profile">
+          <img src="/photos/dog.jpg" alt="Pet 2">
+          <h3>Buddy</h3>
+          <p>Age: 1 years | Breed: Shih tzu | Location: California</p>
+        </div>
+        <div class="pet-profile">
+          <img src="/photos/rabbit.jpg" alt="Pet 3">
+          <h3>Max</h3>
+          <p>Age: 0.5 year | Breed: Rabbit | Location: Texas</p>
+        </div>
+      </div>
+      <button onclick="nextPet()">Next</button>
+      <button onclick="prevPet()">Previous</button>
+    </div>
+  </section>
+
+  <!-- Chatbot Section -->
+  <section id="chatbot" class="section">
+    <h2>Chat with PawBuddy</h2>
+    <div class="chatbox">
+      <div class="messages">
+        <div class="msg bot">Hi! I'm PawBuddy. How can I help you today?</div>
+      </div>
+      <input type="text" id="user-message" placeholder="Ask a question...">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Pet-Friendly City Campaign | All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
